@@ -3,7 +3,7 @@
 ## Summary
 This project is designed to create an interactive Halloween trick-or-treat experience using PlatformIO. The project involves programming a microcontroller to control various Halloween-themed devices and sensors. Ready to be included in your halloween crafts!
 
-![Protoboard photo](./images/esp-trick-or-treat-photo.png)
+![Protoboard photo](./images/esp-trick-or-treat-photo.jpg)
 
 ## Functionality
 - **Motion Detection**: Detects motion to trigger Halloween effects.
