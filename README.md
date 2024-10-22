@@ -6,39 +6,44 @@ This project is designed to create an interactive Halloween trick-or-treat exper
 ![Protoboard photo](./images/esp-trick-or-treat-photo.jpg)
 
 ## Functionality
-- **Motion Detection**: Detects motion to trigger Halloween effects.
-- **Sound Effects**: Plays spooky sounds when motion is detected.
-- **Lighting Control**: Controls LED lights to create a spooky atmosphere.
-- **User Interaction**: Allows users to interact with the setup via buttons or other input devices.
+- **Motion Detection**: Detects motion through ultrasonic sensor to activate a servo motor. Attach it on your Halloween artifacts!
+- **Lighting Control**: Enable two LED lights automatically due to motion detection to create a spooky atmosphere.
+- **Actuator**: Allows the activation of a servo motor when a terrifying object is detected!
 
 ## How to Build and Deploy
 
 ### Prerequisites
 - PlatformIO IDE installed
-- Compatible microcontroller (e.g., Arduino, ESP32)
-- Required sensors and actuators (motion sensor, speaker, LEDs, etc.)
+- Compatible microcontroller: ESP32 (developed on a ESP32 pico dev kit)
+- Required sensors and actuators: HC-SR04 ultrasonic sensor, Micro servo 99, two red LEDs, two resistors, wires and a power source
 
-### Building the Project
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/halloween-trick-or-treat.git
-    ```
-2. Open the project in PlatformIO IDE:
-    ```sh
-    platformio init --board <your_board>
-    ```
-3. Write or modify the code in the `src` directory.
+### Building and Deploying the Project
 
-### Deploying the Project
-1. Connect your microcontroller to your computer.
-2. Upload the code to the microcontroller:
-    ```sh
-    platformio run --target upload
-    ```
-3. Monitor the serial output (optional):
-    ```sh
-    platformio device monitor
-    ```
+1. [Install PlatformIO Core](https://docs.platformio.org/page/core.html)
+2. Download [development platform with examples](https://github.com/platformio/platform-espressif32/archive/develop.zip)
+3. Extract ZIP archive
+4. Run these commands:
+
+```shell
+git clone https://github.com/jfontecha/trick-or-treat-esp32.git
+# Change directory to example
+$ cd trick-or-treat-esp32
+
+# Build project
+$ pio run
+
+# Upload firmware
+$ pio run --target upload
+
+# Build specific environment
+$ pio run -e esp32dev
+
+# Upload firmware for the specific environment
+$ pio run -e esp32dev --target upload
+
+# Clean build files
+$ pio run --target clean
+```
 
 ### Ports and Connections
 
