@@ -28,12 +28,12 @@ void loop() {
   Serial.print(ultrasonic1.read());   // Prints the distance on the default unit (centimeters)
   Serial.println("cm");
 
-  //If dinstance is less than 9cm, rotate the servo motor to 90°
-  if (ultrasonic1.read() <= 9){
+  //If dinstance is less than 7cm, rotate the servo motor to 90°
+  if (ultrasonic1.read() <= 7){
     Serial.println("Object detected!, rotating servo motor to 90° and light on the LEDs");
     digitalWrite(LED1_PIN, HIGH);     // turn the LED on
     digitalWrite(LED2_PIN, HIGH);      // turn the LED on
-    myservo.write(90);
+    myservo.write(60);
     delay(500);
 
   }
