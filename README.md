@@ -68,4 +68,4 @@ Below is a visual representation of the connections for the sensors and actuator
 Enjoy your interactive Halloween setup!
 
 ![Before](./images/before_p.jpg)
-![After](./images/after_p.jpgg)
+![After](./images/after_p.jpg)
