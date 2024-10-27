@@ -1,4 +1,4 @@
-# Halloween Trick-or-Treat Project by @jfontecha
+# Halloween Trick-or-Treat ESP32 tiny project
 
 ## Summary
 This project is designed to create an interactive Halloween trick-or-treat experience using PlatformIO. The project involves programming a microcontroller to control various Halloween-themed devices and sensors. Ready to be included in your halloween crafts!
@@ -66,3 +66,6 @@ Below is a visual representation of the connections for the sensors and actuator
 
 
 Enjoy your interactive Halloween setup!
+
+![Before](./images/before_p.jpg)
+![After](./images/after_p.jpgg)
